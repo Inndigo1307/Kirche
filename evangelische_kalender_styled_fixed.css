@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.et_filter_headline,
+.monthbar,
+.et_content_title a.et_link_title,
+#et_detail_title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+#et_container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Filterbereich */
+#et_filter_container {
+  background: #f4f6f8;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.et_filter_headline,
+.et_filter_subrow {
+  background: none;
+  font-weight: bold;
+  padding: 6px 0;
+  color: #1b2a49;
+  font-size: 16px;
+}
+
+/* Eingabefelder */
+#et_filter_container input[type=text],
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.et_submit {
+  background-color: #1b2a49;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.et_submit:hover {
+  background-color: #2f3d66;
+}
+
+.et_reset {
+  background: #ddd;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Monatsbalken */
+.monthbar {
+  background-color: #1b2a49;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Veranstaltungen */
+.et_content_row {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+.et_content_title a.et_link_title {
+  color: #1b2a49;
+  font-weight: bold;
+  text-decoration: none;
+}
+.et_content_title a.et_link_title:hover {
+  text-decoration: underline;
+}
+
+.et_description {
+  color: #555;
+  margin-top: 6px;
+}
+
+/* Pagination */
+.simple-pagination {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.simple-pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.simple-pagination li {
+  margin: 0;
+  padding: 0;
+}
+
+.simple-pagination a, .simple-pagination span {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  text-decoration: none;
+  color: #333;
+}
+.simple-pagination a:hover {
+  background: #e0e0e0;
+}
+.simple-pagination .current {
+  background: #1b2a49;
+  color: white;
+  border-color: #1b2a49;
+}
